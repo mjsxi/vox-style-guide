@@ -31,7 +31,7 @@ body {
   .m-header {
     width:100%;
     background-color: $vox-blue;
-    padding: 1.5em 0%;
+    padding: 3em 0em 2em;
     .m-header-content{
       width:80%;
       max-width: 63.75em;
@@ -45,7 +45,7 @@ body {
         }
       }
       .m-byline{
-        width:50%;
+        width:60%;
         float: left;
         font-size: .5em;
         font-style: italic;
@@ -62,6 +62,39 @@ body {
     width:80%;
     max-width: 63.75em;
     margin:0 auto;
-    padding: 2em 0;
+    .m-section-body__content {
+      padding: 2em 0;
+      h2 {
+        @include font($b);
+        font-size: 2em;
+      }
+      hr {
+        margin: 1em 0 2em;
+        border: 3px solid;
+        color: lighten( $vox-blue,30% );
+      }
+      .m-colum_container {
+        margin-bottom: 2em;
+        .m-colum_one,
+        .m-colum_two,
+        .m-colum_three {
+          width:30.3%;
+          float: left;
+          margin-right:4.5%;
+          h3 {
+            @include font($b);
+            font-size:1.5em;
+            margin-bottom: .5em;
+          }
+        }
+        .m-colum_three {
+          margin-right:0%;
+        }
+      }
+    }
+  }
+  .m-footer {
+    background-color: $vox-yellow;
+    height: 10px;
   }
 }
