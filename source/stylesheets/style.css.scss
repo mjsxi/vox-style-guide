@@ -31,15 +31,22 @@ body {
   .m-header {
     width:100%;
     background-color: $vox-blue;
-    padding: 3em 0em 2em;
+    padding: 4em 0em 2em;
+    border-bottom: 5px solid lighten( $vox-blue,20% );
     .m-header-content{
       width:80%;
       max-width: 63.75em;
       margin: 0 auto;
+      @media (max-width: 549px) {
+        width:90%;
+      }
       .m-logo {
         width:10%;
         min-width: 6.375em;
         float: left;
+        &:hover {
+          opacity: .9;
+        }
         .vox-logo {
           fill: $vox-grey;
         }
@@ -62,11 +69,23 @@ body {
     width:80%;
     max-width: 63.75em;
     margin:0 auto;
+    @media (max-width: 549px) {
+      width:90%;
+    }
     .m-section-body__content {
-      padding: 2em 0;
+      padding: 3em 0;
+      a {
+        color: $vox-black;
+        text-decoration:none;
+        padding-bottom: .05em;
+        &:hover {
+          border-bottom: 2px solid $vox-black;
+        }
+      }
       h2 {
         @include font($b);
         font-size: 2em;
+        margin-bottom: 1.5em;
       }
       hr {
         margin: 1em 0 2em;
@@ -75,6 +94,9 @@ body {
       }
       .m-colum_container {
         margin-bottom: 2em;
+        @media (max-width: 767px) {
+          margin-bottom:0em;
+        }
         .m-colum_one,
         .m-colum_two,
         .m-colum_three {
@@ -86,6 +108,11 @@ body {
             font-size:1.5em;
             margin-bottom: .5em;
           }
+          @media (max-width: 767px) {
+            width:100%;
+            margin-right:0%;
+            margin-bottom:1em;
+          }
         }
         .m-colum_three {
           margin-right:0%;
@@ -94,7 +121,8 @@ body {
     }
   }
   .m-footer {
-    background-color: $vox-yellow;
-    height: 10px;
+    background-color: darken( $vox-grey,10% );
+    height:30px;
+    border-bottom: 5px solid $vox-yellow;
   }
 }
