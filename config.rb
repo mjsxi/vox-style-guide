@@ -20,4 +20,5 @@ configure :build do
    set :absolute_prefix, "http://vox.com"
    activate :minify_javascript
    activate :minify_css
+   activate :relative_assets
 end
