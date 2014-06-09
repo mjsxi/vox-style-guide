@@ -1,0 +1,1 @@
+{ "id": 137, "build_type": "middleman", "slug": "voxdotcom-style-guide", "namespace": "vox-style-guide", "url_prefix": "/a/voxdotcom-style-guide", "community": "vox.com", "s3_bucket": "chorus-editorial-apps", "cdn_host": "http://ea-cdn.voxmedia.com" }
