@@ -19,7 +19,7 @@ activate :directory_indexes
 
 configure :build do
    set :debug, "false"
-   set :url_prefix, "/a/voxdotcom-style-guide"
+   set :url_prefix, "/a/style-guide"
    set :absolute_prefix, "http://vox.com"
    activate :minify_javascript
    activate :minify_css
