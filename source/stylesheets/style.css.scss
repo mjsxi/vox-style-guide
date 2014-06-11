@@ -233,6 +233,28 @@ body {
           }
         }
       }
+      //#### START OF PHOTO PAGE
+      .m-mosaic {
+        img {
+          margin: -3px 0;
+        }
+        .m-mosaic-60 {
+          width:60%;
+          float: left;
+          @media (max-width: 750px) {
+            width:100%;
+            float: none;
+          }
+        }
+        .m-mosaic-40 {
+          width:40%;
+          float: left;
+          @media (max-width: 750px) {
+            width:100%;
+            float: none;
+          }
+        }
+      }
     }
   }
   .m-footer {
