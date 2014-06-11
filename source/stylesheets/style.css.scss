@@ -179,6 +179,60 @@ body {
         }
       }
       //#### START OF COLOR PAGE
+      .m-color-primary {
+        .m-color-sections {
+          width: 25%;
+          float: left;
+          @media (max-width: 650px) {
+            width:100%;
+            float: none;
+          }
+          .m-color-container {
+            .box {
+              width:10em;
+              height: 10em;
+              margin: 0 auto;
+              @media (max-width: 850px) {
+                width: 8em;
+                height: 8em;
+              }
+              @media (max-width: 550px) {
+                width: 10em;
+                height: 10em;
+              }
+            }
+            .m-vox-blue {
+              background: $vox-blue;
+            }
+            .m-vox-yellow {
+              background: $vox-yellow;
+            }
+            .m-vox-grey {
+              background: $vox-grey;
+              border: 1px solid $vox-black;
+            }
+            .m-vox-black {
+              background: $vox-black;
+            }
+            .m-text-container {
+              width: 10em;
+              margin: 1em auto;
+              @media (max-width: 850px) {
+                width: 8em;
+                p {
+                  font-size: .8em;
+                }
+              }
+              @media (max-width: 550px) {
+                width: 10em;
+                p {
+                  font-size: 1em;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
   .m-footer {
