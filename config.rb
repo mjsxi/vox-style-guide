@@ -15,6 +15,7 @@ set :absolute_prefix, "http://localhost:4567"
 activate :livereload
 
 activate :chorus
+activate :directory_indexes
 
 configure :build do
    set :debug, "false"
