@@ -133,6 +133,10 @@ body {
           width: 30.3%;
           margin-right:4.5%;
           float: left;
+          @media (max-width: 550px) {
+            width:96%;
+            float: none;
+          }
           &.blue {
             background: $vox-blue;
           }
@@ -140,6 +144,11 @@ body {
         .m-about-logo__content {
           width: 60.1%;
           float: left;
+          @media (max-width: 550px) {
+            width:100%;
+            float: none;
+            margin-top:1em;
+          }
         }
       }
       //#### START OF TYPOGRAPHY PAGE
@@ -151,10 +160,19 @@ body {
             width: 30.3%;
             float: left;
             margin-right: 4.5%;
+            @media (max-width: 550px) {
+              width:50%;
+              float: none;
+              margin-bottom: 1em;
+            }
           }
           &.m-66 {
             width: 30.3%;
             float: left;
+            @media (max-width: 550px) {
+              width:100%;
+              float: none;
+            }
             .balto {
               @include font($b);
             }
@@ -260,7 +278,7 @@ body {
   .m-footer {
     background-color: darken( $vox-grey,10% );
     height:100px;
-    border-bottom: 10px solid $vox-yellow;
+    border-top: 5px solid $vox-yellow;
   }
 }
 
