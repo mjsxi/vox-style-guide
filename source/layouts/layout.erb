@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <%= partial "partials/meta" %>
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <% if current_page.data.title %>
+      <% if current_page.data.title == "Voxdotcom Style Guide" %>
+        <title><%= app_name %> | Vox</title>
+      <% else  %>
+        <title><%= current_page.data.title %> | <%= app_name %> | Vox</title>
+      <% end %>
+    <% else %>
+      <title><%= app_name %> | Vox</title>
+    <% end %>
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Voxdotcom Style Guide" %></title>
+
+    <%= stylesheet_link_tag "style" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= partial "partials/head" %>
+    <%= yield %>
+    <%= partial "partials/foot" %>
+  </body>
+</html>
